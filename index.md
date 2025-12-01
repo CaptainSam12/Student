@@ -7,7 +7,7 @@ show_reading_time: false
 
 Hi! My name is [Sam]
 
-### Development Environment
+### Development Environment 
 
 > Coding starts with tools, explore these tools and procedures with a click.
 
@@ -51,5 +51,6 @@ Hi! My name is [Sam]
 ### Get in Touch
 
 > Feel free to reach out if you'd like to collaborate or learn more about our work.
+> I would love to help you out!
 
-<p style="color: #2A7DB1;">Open Coding Society: <a href="https://opencodingsociety.com" style="color: #2A7DB1; text-decoration: underline;">Socials</a></p>
+<p style="color: #4893b1ff;">Open Coding Society: <a href="https://opencodingsociety.com" style="color: #2A7DB1; text-decoration: underline;">Socials</a></p>
