@@ -139,7 +139,15 @@ Gallery of Pics, scroll to the right for more ...
   <img src="{{site.baseurl}}/images/samaghna-alaska-pic (1).jpg" alt="Image 8">
   <img src="{{site.baseurl}}/images/sesame-street-pic (1).jpg" alt="Image 9">
 </div>
-<script>
+
+<body>
+
+  <div id="output"></div>
+
+  <script>
+    // your entire code snippet goes here
+  </script>
+
   // Clear the output
 outputElement.innerHTML = '';
 
@@ -218,4 +226,7 @@ for (const location of living_in_the_world) {
 
 // Add container to output
 outputElement.appendChild(container);
-</script>
+
+</body>
+
+
