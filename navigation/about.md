@@ -106,6 +106,86 @@ Here are some places I have lived.
 </div>
 India - Two years        Moved to America        I've lived in California for 12 years        One day I'll explore the Galaxy as an astronaut!
 
+<div id="output"></div>
+// Clear the output
+outputElement.innerHTML = '';
+
+// Data array
+const living_in_the_world = [
+  {
+    flag: "https://upload.wikimedia.org/wikipedia/commons/2/2e/The_Walking_Dead_Logo.png",
+    greeting: "The Walking Dead",
+    description: "Literally the best"
+  },
+  {
+    flag: "https://upload.wikimedia.org/wikipedia/commons/3/36/Lost_in_Space_%28Legendary_Television%29_logo.svg",
+    greeting: "Lost In Space",
+    description: "I watched it four times"
+  },
+  {
+    flag: "https://upload.wikimedia.org/wikipedia/commons/3/33/The_100_%28CBS_Studios_television_series%29_logo.svg",
+    greeting: "The 100",
+    description: "Kept me on the edge of my seat"
+  },
+  {
+    flag: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Jurassic_World_Camp_Cretaceous_-_Title_Card_Logo.png",
+    greeting: "Camp Cretaceous",
+    description: "Best Family Show"
+  }
+];
+
+// Create a div container with id
+const container = document.createElement('div');
+container.id = 'grid_container';
+
+// Style the container
+container.style.border = '2px solid';
+container.style.padding = '10px';
+
+// Grid specific styles
+container.style.display = 'grid';
+container.style.gridTemplateColumns = 'repeat(auto-fill, minmax(150px, 1fr))';
+container.style.gap = '10px';
+
+// Loop through data and create grid items
+for (const location of living_in_the_world) {
+  // Create grid item
+  const gridItem = document.createElement('div');
+  gridItem.style.textAlign = 'center';
+
+  // Create a flag image
+  const img = document.createElement('img');
+  img.src = location.flag;
+  img.alt = `${location.description} Flag`;
+  img.style.width = '100%';
+  img.style.height = '100px';
+  img.style.objectFit = 'contain';
+
+  // Create a description
+  const description = document.createElement('p');
+  description.textContent = location.description;
+  description.style.margin = '5px 0';
+  description.style.fontWeight = 'bold';
+
+  // Create a greeting
+  const greeting = document.createElement('p');
+  greeting.textContent = location.greeting;
+  greeting.style.margin = '5px 0';
+  greeting.style.fontStyle = 'italic';
+  greeting.style.opacity = '0.7';
+
+  // Add all elements to grid item
+  gridItem.appendChild(img);
+  gridItem.appendChild(description);
+  gridItem.appendChild(greeting);
+
+  // Add grid item to container
+  container.appendChild(gridItem);
+}
+
+// Add container to output
+outputElement.appendChild(container);
+
 ### Journey through Life
 
 Here's a little bit about me!
