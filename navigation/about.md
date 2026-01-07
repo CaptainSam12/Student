@@ -145,9 +145,7 @@ Gallery of Pics, scroll to the right for more ...
   <div id="output"></div>
 
   <script>
-    // your entire code snippet goes here
-  </script>
-
+    
   // Clear the output
 outputElement.innerHTML = '';
 
@@ -228,5 +226,7 @@ for (const location of living_in_the_world) {
 outputElement.appendChild(container);
 
 </body>
+
+  </script>
 
 
