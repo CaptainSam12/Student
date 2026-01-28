@@ -155,7 +155,7 @@ My Favorite (and most rewatched) shows ever!
   outputElement.innerHTML = '';
 
   // Data array
-  const living_in_the_world = [
+  const my_favorite_shows = [
     {
       flag: "https://upload.wikimedia.org/wikipedia/commons/2/2e/The_Walking_Dead_Logo.png",
       greeting: "The Walking Dead",
@@ -192,7 +192,7 @@ My Favorite (and most rewatched) shows ever!
   container.style.gap = '10px';
 
   // Loop through data and create grid items
-  for (const location of living_in_the_world) {
+  for (const location of my_favorite_shows) {
     const gridItem = document.createElement('div');
     gridItem.style.textAlign = 'center';
 
